@@ -1,0 +1,425 @@
+
+html,body,header{
+    height: 100%;
+}
+
+/* main,header,footer{
+    position: relative;
+} */
+
+a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;   
+}
+
+p,h1,h2,h3,h4,li,h5{
+    font-family: 'Raleway', sans-serif;
+    color: #1E1E1E;
+}
+
+span,.rose{
+    color: #ff3465;
+}
+
+header{
+    background:url("../img/Cowboy_Hero_Main.jpg") center/cover;
+    position: relative;
+}
+
+/* nav gauche */
+
+/* menu */
+
+nav a{
+    color: #1E1E1E;
+    display: inline-block;
+    
+}
+
+.boitelog{
+    padding: 40px 30px;
+}
+
+.boitelog img{
+    display: block;
+}
+
+.main-nav a{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Effet soulignement */
+
+.main-nav a+a{
+    position: relative;
+    margin: 0px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .3s all ease-in-out;
+}
+
+.main-nav a:after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    background: #303030;
+    bottom: -2px;
+    left: 0;
+    transition: .3s all ease-in-out;
+}
+
+.main-nav a:hover:after{
+    width: 100%;
+}
+
+/* nav droite */
+.main-nav-d{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+nav>ul{
+    font-size: 0;
+}
+
+nav>ul>li{
+    display: inline-block;
+    position: relative;
+ }
+
+.submenu{
+    display: none;
+    transition: .3s all ease-in-out;
+ }
+
+.submenu li a{
+    padding: 30px 50px;
+    display: block;
+}
+
+/* langues */
+
+nav li:hover .submenu{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+    z-index: 10000;
+    background-color: #fff;
+}
+
+.menu-langue a:hover{
+    background-color: #303030;
+    color: #fff;
+    width: 44%;
+}
+
+/* fin langues */
+
+nav>ul::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+nav>ul>li>a{
+    padding: 30px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-langue a{
+    color: #1e1e1e;
+    transition: .3s all ease-in-out;
+}
+
+nav>ul>:nth-child(2){
+    background-color: #303030;
+}
+
+nav>ul>:nth-child(2)>a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+nav>ul>:nth-child(3){
+    background-color: #ff3465;
+}
+
+nav>ul>:nth-child(3)>a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* I'am a cowboy */
+
+.titre{
+    position: absolute;
+    top: 580px;
+    left: 80px;  
+}
+
+.titre h1{
+    font-size: 100px;
+    line-height: 92px;
+    letter-spacing: -2px;
+}
+
+.titre p{
+    font-size: 18px;
+    color: #808080;
+}
+
+/* nav logos */
+
+.logos{
+    text-align: center;
+    background-color: #ff3465;
+}
+
+.logos a img{
+    height: 90px;
+    margin: 80px 50px;
+}
+
+/* Articles duo txt + i (sections) */
+/* all */
+.trio div{
+    display: inline-block;
+}
+
+.trio div img{
+    width:950px;
+    vertical-align: middle;
+}
+
+.duo-txt-un,.duo-txt-trois{
+    width:946px;
+}
+
+.duo-txt-un,.duo-txt-deux,.duo-txt-trois{
+    vertical-align: middle;
+    position: relative;
+    left: 250px;
+}
+.duo-txt>h2{
+    font-size: 79px;
+    letter-spacing: -1px;
+}
+
+.duo-txt>p{
+    font-size: 21px;
+    line-height: 39px;
+}
+
+.duo-txt>a,.flèches div a{
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+/* Reviews */
+
+.reviews{
+    background-color: #FAFAFA;
+    padding: 50px;
+}
+
+.reviews p,.cadreb>h3,p{
+   font-weight: bold; 
+}
+
+.text-no{
+    text-transform: uppercase;
+    margin-bottom: -40px;
+}
+
+.text-customer{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.text-reviews{
+    font-size: 18px;
+    color: #808080;
+    line-height: 33px;
+}
+
+/* cadre reviews */
+
+.blocs{
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.blocs div{
+    display: inline-block;
+}
+
+.cadreb{
+    background-color: #fff;
+    width: 250px;
+    height: 425px;
+    margin: 0px 18px;
+    padding: 54px 36px;
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: bold;
+}
+
+div h3+p+p+p{
+    position: absolute;
+    bottom: 20px;
+}
+
+/* Voir toutes les reviews */
+
+.flèches{
+    background-color: #FAFAFA;
+    padding-bottom: 50px;
+}
+
+.flèches>div+div{
+    text-align: right;
+    padding: 50px;
+}
+
+.cubes>a div{
+    vertical-align: center;
+    color: #1e1e1e;
+}
+
+/* .flèches>div,div{
+    display: inline-block;
+} */
+
+.cubes>a{
+    display: inline-block;  
+}
+
+.cube-un,.cube-deux{
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px; 
+    margin-top: 50px;
+    line-height: 20px;
+    text-align: center;
+    
+}
+
+.cube-un{
+    margin-left: 70px;
+    margin-right: 10px;
+    border: 1px solid #85858546;
+}
+
+.cube-deux{
+    border: 1px solid #858585a4;
+}
+
+.cube-deux:hover{
+    border: 1px solid #858585;
+}
+
+/* footer */
+/* Partie une */
+footer{
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+footer section div{
+    display: inline-block;
+    padding: 80px 50px 80px 20px;
+}
+
+.footer-une{
+    border-bottom:1px solid rgba(255, 255, 255,0.1);
+}
+
+footer section div p,li a,h4,.footer-deux div a{
+    color: #fff;
+}
+
+.txt-blanc,li a,h4{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+.upper,h4,h5{
+    text-transform: uppercase;
+}
+
+ul{
+    text-align: left;
+    list-style: none;
+}
+
+.footer-une:nth-child(2),.footer-une:nth-child(3),.footer-une:nth-child(4){
+    vertical-align: top;
+}
+
+.image{
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+/* espacements */
+
+.abonnez{
+    margin-right: 150px;
+}
+
+.infos{
+    padding: 0px 150px;
+}
+
+.liste-image{
+    padding: 0px 150px 0px 200px;
+}
+
+/* Partie deux */
+
+.footer-deux div a{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.icones a img{
+    height: 30px;
+    padding: 5px;
+}
+
+.footer-deux>div{
+    vertical-align: middle;
+}
+
+/* espacements */
+
+.icones{
+    margin-right: 200px;
+}
+
+.data{
+    padding: 0px 180px 0px 120px;
+}
+
+.c{
+    padding-left: 120px; 
+}
